@@ -1,0 +1,175 @@
+:root {
+  ---main-font: "Outfit", sans-serif;
+  ---secondary-font: "Young Serif", serif;
+  --wenge-brown: hsl(19, 49%, 32%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.header-img {
+  background-image: url("./assets/images/image-omelette.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 160px;
+}
+
+.recipe {
+  padding: 2em;
+}
+
+.recipe-title {
+  font-family: var(---secondary-font);
+}
+
+.recipe-body {
+  padding-top: 1.2em;
+  padding-bottom: 3em;
+  color: hsl(30, 18%, 87%);
+}
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding-left: 2em;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 3em;
+}
+
+.preparation-time > li {
+  margin-left: 2em;
+  padding-left: 0.9em;
+  padding-bottom: 1em;
+}
+
+.preparation-time__title {
+  font-size: 1.2rem;
+  font-family: var(---secondary-font);
+  padding-bottom: 1em;
+  color: hsl(335, 25%, 40%);
+}
+
+.ingredients {
+  margin-left: -1.5em;
+  padding-left: 2em;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ingredients-title {
+  font-size: 1.7rem;
+  font-family: var(---secondary-font);
+  padding-bottom: 1em;
+  color: var(--wenge-brown);
+}
+
+hr {
+  border: 1px solid hsl(30, 18%, 87%);
+  margin: 2em 0;
+}
+
+.ingredients > li {
+  margin-left: 1.5em;
+  padding-left: 0.9em;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+.instructions-title {
+  font-family: var(---secondary-font);
+  color: var(--wenge-brown);
+  padding-bottom: 1em;
+  font-size: 1.7rem;
+}
+
+.instructions > li {
+  margin-left: 1.5em;
+  padding-left: 0.9em;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+.nutrition-title {
+  color: var(--wenge-brown);
+  font-family: var(---secondary-font);
+  padding-bottom: 1em;
+}
+
+.nutrition {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition-para {
+  padding-bottom: 2em;
+}
+
+.nutrition,
+th {
+  padding: 1em 0;
+}
+
+.calories,
+.carbs,
+.protein,
+.fat {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.brown {
+  color: var(--wenge-brown);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+
+  .main {
+    padding: 4em;
+  }
+
+  .container {
+    margin: 0 auto;
+    background-color: white;
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1.5em;
+  }
+
+  .header-img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    height: 40vh;
+  }
+
+  .recipe {
+    padding-left: 0;
+    padding-bottom: 2em;
+  }
+}
